@@ -19,6 +19,26 @@ Follow the installation instructions for:
 6. [pipx](https://pipx.pypa.io/stable/installation/#on-windows) - an "improved" python package manager
 7. [poetry](https://python-poetry.org/docs/#installing-with-pipx) - dependency management tool
 
+### If you use the git bash terminal for Windows
+
+The bash shell probably won't know where to find any of the tooling when you invoke them in the terminal.
+
+In that case, create a file named `.profile` in your home directory - i.e. `~/.profile` - and put the following code in there.
+
+```
+export PATH=$PATH:/c/Python312
+export PATH=$PATH:/c/Python312/Scripts
+export PATH=$PATH:/c/Python311
+export PATH=$PATH:/c/Python311/Scripts
+export PATH=$PATH:/c/Python310
+export PATH=$PATH:/c/Python310/Scripts
+export PATH=$PATH:/c/users/jcrizk/.local/bin
+```
+
+You'll need to restart your pc before it takes effect, but if you don't want to restart your pc, then execute each line individually in your terminal.
+
+After that, you should be able to use the tooling.
+
 ## local usage
 
 After local setup is completed, this sections shows what you can do.
