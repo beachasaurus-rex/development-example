@@ -37,7 +37,7 @@ To create a code coverage report in XML, execute `make cov-xml`. This is useful 
 
 # Local software development tooling
 
-If you've done any kind of software development, you'll have noticed that there are a lot of tools that exist specifically tailored to improving the development experience. In this example, I'm mentioning the few that I think are important.
+There are a lot of tools that exist specifically tailored to improving the development experience, which is especially true in the python community. If you've ever needed to deploy anything built with python - like a bot,website, or any web API - you'll have quickly noticed that it quickly becomes devops hell without any local software development tooling. For this example implementation, I chose tools that, from their github profiles, look relatively well-maintained and appear to be well-adopted by the python community. FYI, Python isn't the language I typically use to build projects, so I probably won't know about other tooling options.
 
 ## Dependency management tooling
 
@@ -55,25 +55,13 @@ Managing these dependencies includes things such as:
 
 We need this kind of tooling because it simplifies managing our dependencies.
 
+For dependency management in this example, I chose [poetry](https://github.com/python-poetry/poetry) because it seems relatively simple to use, it doesn't seem very opinionated on how it thinks people should do development, it does everything that I think I need, and everything is controlled by a single config file.
+
 ## Test tooling
 
 To engineer software, it's a requirement that the software be tested against some criteria. Test tooling simplifies the code needed to write tests and saves you from creating your own test tooling, which would then require you to test your own tooling, which takes a fair amount of time to do.
 
 With test tooling, you can more quickly build tests in your codebase and then execute all of the tests with the test runner that comes with the tooling.
-
-### Code coverage
-
-The test tooling that we use should be able to produce code coverage results so that we can analyze those results based on our own opinions regarding the code coverage of whatever we're developing.
-
-# Local Python development in this example
-
-If you've ever needed to use python to deploy anything - like for example, a bot or a website or any web API - you'll have quickly noticed that it quickly becomes devops hell. For this example implementation, I chose tools that, from their github profiles, look relatively well-maintained and appear to be well-adopted by the python community.
-
-## Dependency management tooling
-
-For dependency management, I chose [poetry](https://github.com/python-poetry/poetry) because it seems relatively simple to use, it doesn't seem very opinionated on how it thinks people should do development, it does everything that I need, and everything is controlled by a single config file.
-
-## Test tooling
 
 For test tooling, I chose the following tools for the following reasons:
 
@@ -86,3 +74,7 @@ This test tooling stack has everything that I think I need:
 - simplifying building tests
 - executing our tests with multiple python interpreters to easily scale tests across interpreter versions
 - showing me which lines are being missed by the test suite
+
+### Code coverage
+
+The test tooling that we use should be able to produce code coverage results so that we can analyze those results based on our own opinions regarding the code coverage of whatever we're developing.
