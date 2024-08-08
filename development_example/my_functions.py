@@ -2,7 +2,7 @@
 def is_near_number(num_to_compare, reference, tol):
     rel_diff = 0
     if reference == 0:
-        rel_diff = abs(num_to_compare - reference)
+        rel_diff = num_to_compare - reference
     else:
-        rel_diff = abs((num_to_compare - reference) / reference)
-    return rel_diff <= tol
+        rel_diff = (num_to_compare - reference) / reference
+    return rel_diff >= -tol and rel_diff <= tol
