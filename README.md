@@ -37,7 +37,7 @@ To create a code coverage report in XML, execute `make cov-xml`. This is useful 
 
 # Local software development tooling
 
-If you've done any kind of software development, you'll have noticed that there are a lot of tools that exist specifically tailored to improving the development experience. In this example, I'm mentioning the few that I think are important for the work that I do.
+If you've done any kind of software development, you'll have noticed that there are a lot of tools that exist specifically tailored to improving the development experience. In this example, I'm mentioning the few that I think are important.
 
 ## Dependency management tooling
 
