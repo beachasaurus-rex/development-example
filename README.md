@@ -37,7 +37,9 @@ To create a code coverage report in XML, execute `make cov-xml`. This is useful 
 
 # Local software development tooling
 
-There are a lot of tools that exist specifically tailored to improving the development experience, which is especially true in the python community. If you've ever needed to deploy anything built with python - like a bot,website, or any web API - you'll have quickly noticed that it quickly becomes devops hell without any local software development tooling. For this example implementation, I chose tools that, from their github profiles, look relatively well-maintained and appear to be well-adopted by the python community. FYI, Python isn't the language I typically use to build projects, so I probably won't know about other tooling options.
+There are a lot of tools that exist specifically tailored to improving the development experience, which is especially true in the python community. If you've ever needed to deploy anything built with python - like a bot, website, or any web API - you'll have quickly noticed that it quickly becomes devops hell without any local software development tooling.
+
+For this example implementation, I chose tools that, from their github profiles, look relatively well-maintained and appear to be well-adopted by the python community. FYI, Python isn't the language I typically use to build projects, so I probably won't know about other tooling options.
 
 ## Dependency management tooling
 
