@@ -19,11 +19,27 @@ Follow the installation instructions for:
 6. [pipx](https://pipx.pypa.io/stable/installation/#on-windows) - an "improved" python package manager
 7. [poetry](https://python-poetry.org/docs/#installing-with-pipx) - dependency management tool
 
+After these are installed, add the following paths to the `Path` environment variable in Windows. If you don't know how to do that, then google how to do it for your Windows version.
+
+Make sure to replace YOUR_USERNAME_DIR with your actual username directory name.
+
+```
+C:\Python312
+C:\Python312\Scripts
+C:\Python311
+C:\Python311\Scripts
+C:\Python310
+C:\Python310\Scripts
+C:\Users\YOUR_USERNAME_DIR\.local\bin
+```
+
 ### If you use the git bash terminal for Windows
 
 The bash shell probably won't know where to find any of the tooling when you invoke them in the terminal.
 
-In that case, create a file named `.profile` in your home directory - i.e. `~/.profile` - and put the following code in there. Make sure to put your actual user directory name in the last command.
+In that case, create a file named `.profile` in your home directory - i.e. `~/.profile` - and put the following code in there.
+
+Make sure to replace YOUR_USERNAME_DIR with your actual username directory name.
 
 ```
 export PATH=$PATH:/c/Python312
