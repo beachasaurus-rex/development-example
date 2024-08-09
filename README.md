@@ -32,7 +32,7 @@ export PATH=$PATH:/c/Python311
 export PATH=$PATH:/c/Python311/Scripts
 export PATH=$PATH:/c/Python310
 export PATH=$PATH:/c/Python310/Scripts
-export PATH=$PATH:/c/users/jcrizk/.local/bin
+export PATH=$PATH:/c/users/YOUR_USERNAME_DIR/.local/bin
 ```
 
 You'll need to restart your pc before it takes effect, but if you don't want to restart your pc, then execute each line individually in your terminal.
