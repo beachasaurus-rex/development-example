@@ -23,7 +23,7 @@ Follow the installation instructions for:
 
 The bash shell probably won't know where to find any of the tooling when you invoke them in the terminal.
 
-In that case, create a file named `.profile` in your home directory - i.e. `~/.profile` - and put the following code in there.
+In that case, create a file named `.profile` in your home directory - i.e. `~/.profile` - and put the following code in there. Make sure to put your actual user directory name in the last command.
 
 ```
 export PATH=$PATH:/c/Python312
